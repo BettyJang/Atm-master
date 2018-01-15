@@ -20,7 +20,7 @@ public class LoginActivity extends AppCompatActivity {
         edUserid = (EditText) findViewById(R.id.userid);
         edPasswd = (EditText) findViewById(R.id.passwd);
         String userid = getSharedPreferences("atm",MODE_PRIVATE).getString("PREF_USERID","");
-        edUserid.setText(userid);
+        edUserid.setText(userid);    //adb儲存帳號
     }
     public void login(View view){
         String userid = edUserid.getText().toString();
